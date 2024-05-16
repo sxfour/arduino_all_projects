@@ -48,7 +48,7 @@ void loop() {
   bool door = ControlDoor();
 
 
-  if (rfid_uid == 2010130 && door) { 
+  if (rfid_uid == # SET INT # && door) { 
     // Serial.print(F("[STATUS] Alarm off, please close a door at 120 seconds.\n")); 
     delay(120000);
   } 
@@ -92,7 +92,7 @@ void SendRestAPI() {
       WiFiClient wifiClient;
       HTTPClient http;
 
-      http.begin(wifiClient, "http://92.53.105.30:8000/users");
+      http.begin(wifiClient, "SET");
 
       int httpCode = http.PUT("{\"user_id\":1, \"username\":\"admin\", \"status\":\"ALARM\"}");
 
