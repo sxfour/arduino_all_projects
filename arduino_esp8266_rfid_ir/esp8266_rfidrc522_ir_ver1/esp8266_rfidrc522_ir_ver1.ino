@@ -6,8 +6,8 @@
 #define RST_PIN 5
 #define SS_PIN 4
 
-const char* ssid = "RT-GPON-C4F8";
-const char* password = "24e8qd\"\"\"B";
+const char* ssid = "SET";
+const char* password = "SET";
 
 MFRC522 mfrc522(4, 5);
 
@@ -30,7 +30,7 @@ void loop() {
   bool door = ControlDoor();
 
 
-  if (rfid_uid == 2010130 && door) { 
+  if (rfid_uid == # SET INT # && door) { 
     Serial.print(F("[STATUS] Alarm off, please close a door at 120 seconds.\n")); 
     delay(120000);
   } 
