@@ -82,6 +82,6 @@ void SendRestAPI() {
   }
 }
 void ValidateCard(int rfid_card) {
-  if (rfid_card == 2010130 && is_active_alarm == false) { is_active_alarm = true; }
-  else if (rfid_card == 2010130 && is_active_alarm) { is_active_alarm = false; }
+  if (rfid_card == # SET INT # && is_active_alarm == false) { is_active_alarm = true; }
+  else if (rfid_card == # SET INT # && is_active_alarm) { is_active_alarm = false; }
 }
