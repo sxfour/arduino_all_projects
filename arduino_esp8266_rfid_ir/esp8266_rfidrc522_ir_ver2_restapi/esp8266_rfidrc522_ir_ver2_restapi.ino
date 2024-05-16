@@ -7,8 +7,8 @@
 #define RST_PIN 5
 #define SS_PIN 4
 
-const char* ssid = "RT-GPON-C4F8";
-const char* password = "24e8qd\"\"\"B";
+const char* ssid = "SET";
+const char* password = "SET";
 
 byte tries = 10;
 
