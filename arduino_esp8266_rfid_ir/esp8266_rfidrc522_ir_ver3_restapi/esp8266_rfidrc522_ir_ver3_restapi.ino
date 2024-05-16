@@ -9,8 +9,8 @@
 
 bool is_active_alarm = false;
 
-const char* ssid = "RT-GPON-C4F8";
-const char* password = "24e8qd\"\"\"B";
+const char* ssid = "SET";
+const char* password = "SET";
 byte tries = 10;
 
 MFRC522 mfrc522(4, 5);
@@ -71,7 +71,7 @@ void SendRestAPI() {
       WiFiClient wifiClient;
       HTTPClient http;
 
-      http.begin(wifiClient, "http://92.53.105.30:8000/users");
+      http.begin(wifiClient, "SET");
 
       int httpCode = http.PUT("{\"user_id\":1, \"username\":\"admin\", \"status\":\"ALARM\"}");
 
